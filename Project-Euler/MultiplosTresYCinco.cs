@@ -18,10 +18,12 @@ namespace Project_Euler
         public void Multiplos()
         {
             Console.Clear();
-            for(int i = 0; i <= NumeroFinal; i++)
+            for(int i = 1; i < NumeroFinal; i++)
             {
                 if ((i % 3 == 0) || (i % 5) == 0)
+                {
                     Console.Write(i + ", ");
+                }
             }
         }
     }

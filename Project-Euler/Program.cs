@@ -22,6 +22,7 @@ namespace Project_Euler
             left = Console.CursorLeft;
             top = Console.CursorTop;
             Console.WriteLine("\n 1. Multiplos de 3 y 5");
+            Console.WriteLine(" 2. Secuencia de Fibonacci");
 
             Console.SetCursorPosition(left, top);
             sw = int.Parse(Console.ReadLine());
@@ -33,6 +34,12 @@ namespace Project_Euler
                     numMax = int.Parse(Console.ReadLine());
                     MultiplosTresYCinco mtlp = new MultiplosTresYCinco(numMax);
                     mtlp.Multiplos();
+                    break;
+                case 2:
+                    Console.Write("\n\nHasta que número quiere obtener: ");
+                    numMax = int.Parse(Console.ReadLine());
+                    Fibonacci fbn = new Fibonacci(numMax);
+                    fbn.Fibon();
                     break;
             }
 
